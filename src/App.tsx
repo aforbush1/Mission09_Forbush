@@ -31,7 +31,7 @@ class CollegeBasketball extends React.Component<CollegeProps> {
 function CollegeTeamList() {
   return (
     <div>
-      {collegeBasketballTeams.map((oneTeam, index) => (
+      {collegeBasketballTeams.teams.map((oneTeam, index) => (
         <CollegeBasketball key={index} {...oneTeam} />
       ))}
     </div>
